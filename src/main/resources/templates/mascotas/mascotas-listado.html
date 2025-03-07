@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mascotas - Listado</title>
+    <style>
+        table{
+            width: 30%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th{
+            background-color: #f2f2f2;
+        }
+        caption{
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<a href="/">Inicio - Home</a>
+<h1>Lista de Mascotas</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Raza</th>
+        <th>Edad(Años)</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Firulais</td>
+        <td>Gran Perro</td>
+        <td>5</td>
+        <td>
+            <a href="/mascotas/actualizar">Editar</a>
+            <a href="/mascotas/eliminar">Eliminar</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Max</td>
+        <td>Husky</td>
+        <td>3</td>
+        <td>
+            <a href="/mascotas/actualizar">Editar</a>
+            <a href="/mascotas/eliminar">Eliminar</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Toby</td>
+        <td>Pastor Aleman</td>
+        <td>2</td>
+        <td>
+            <a href="/mascotas/actualizar">Editar</a>
+            <a href="/mascotas/eliminar">Eliminar</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Simba</td>
+        <td>Pastor Aleman</td>
+        <td>1</td>
+        <td>
+            <a href="/mascotas/actualizar">Editar</a>
+            <a href="/mascotas/eliminar">Eliminar</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<form method="get" action="/mascotas/agregar">
+    <input type="submit" value="Nueva Mascota">
+</form>
+
+</body>
+</html>
